@@ -1,3 +1,21 @@
+# elgammal
+# Y = alpha^X mod q
+# k = key
+# K = Y^k mod q
+# C1 = alpha^k modq
+# C2 = MK mod q
+# dec
+# K = C1^X mod q   M = C2K^-1 mod q
+# elgammal sign
+# m = H(M) 0 <= m <= q-1
+# k 1<= k <= q-1  gcd(k,q-1)=1
+# s1 = a^k mod q    s2 = k^-1(m-Xs1) mod q-1
+# v1 = a^m mod q    v2 = Y^s1 s1^s2 mod q   if v1==v2
+
+# diffie
+# Y1 = alpha^X1 mod q
+# k1 = Y2 ^ X1 mod q    k2 = Y1 ^ X2 mod q if k1==k1
+
 #client.py
 import socket
 
